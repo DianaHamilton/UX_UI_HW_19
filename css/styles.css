@@ -9,17 +9,18 @@
   float: left; 
   height: 50px;
   width: 50px;
+  padding-top: 15px;
   
 }
 .nav {
   position: sticky;
   top: 0;
   z-index: 100; 
-
   display: flex;
   background-color:  white; 
-  padding: 15px;
+  padding: auto;
   justify-content: space-evenly;
+  height: 90px;
 }
 
 .topnav-right{
@@ -97,20 +98,114 @@
 .burger{
  display: none;
 }
-
+/*--------------Search & preloader functions --------------*/
   .search {
    align-items: flex-end;
     background-color:  white; 
     border-radius: 5px;
-    height: 32px;
-    width: 32px;
+    height: 25px;
+    width: 25px;
     margin: 10px;
-    margin-top: 10;
-    padding: 10px;
-            left: 448px;
-            top: 0px;
-   
+    padding: 20px;
+    left: 448px;
+     top: 0px; 
   }
+  .search :hover{
+    align-items: flex-end;
+    background-color:  white; 
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    margin: auto;
+    margin-top: 10;
+    padding: auto;
+    left: 448px;
+     top: 0px; 
+
+  }
+
+  .plus_minus {
+  float: right;
+}
+.toggleContainer {
+  padding: 15px;
+  display: none;
+  transition: all;
+}
+.hiddenSlide {
+  display: none;
+  min-height: 428px;
+}
+.containerHeight {
+  min-height: 428px;
+  background-color: black;
+} */
+ .active {
+  display: block;
+} 
+.w3-ul {
+  cursor: pointer;
+}
+ .preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: #9733EE;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+} 
+.searchBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: auto;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s ease;
+  text-align: center;
+}
+
+#searchForm {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: all .5s ease;
+  width: 500px;
+}
+.searchBar button {
+  background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);      
+  padding: 25px 55px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 300% auto;
+  color: white;            
+  box-shadow: 0 5px 10px #3c195a61;
+  border-radius: 15px;
+  display: block;
+  border: none;
+  display: inline-block;
+  width: auto;
+}
+
+.w3-top {
+  z-index:2;
+  border-radius: 20px;
+}
+
+
 
   ul.demo {
     float: right;
@@ -123,7 +218,6 @@
         height: 100%;
         margin-top: 16px;
         text-align:center;
-       
         color: #868686;
         font-family: Open Sans, Arial, Helvetica, sans-serif;
         font-size: 16px;
@@ -456,5 +550,18 @@ color: #000000;
       justify-content: center;
     }
   }
+
   
-  
+  @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+
