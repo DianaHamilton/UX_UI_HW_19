@@ -1,9 +1,16 @@
+
+$(document).ready(function(){
+  $("div").scroll(function(){
+    $("span").content( x+= 1);
+  });
+});
+
 console.log("worked! homework#19");
 
 function fade() {
   $('.preloader').fadeOut("slow");
   }
-  setTimeout(fade, 3000);
+  setTimeout(fade, 1500);
   
   $(".search").on("click", function(){
     $(".search").toggleClass("active");
