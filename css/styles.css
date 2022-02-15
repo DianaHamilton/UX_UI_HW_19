@@ -197,8 +197,6 @@
   border-radius: 20px;
 }
 
-
-
   ul.demo {
     float: right;
     list-style-type: none;
@@ -309,6 +307,7 @@ button:hover {
 .laptop-img {
   float: left;
   margin-right: 50px;
+  
 }
 
 .brand-text {

@@ -30,4 +30,16 @@ function fade() {
     $(this).find(".toggleContainer").toggleClass("active");
     $(this).siblings(".toggle").find(".toggleContainer").removeClass("active");
   });
-   
+
+
+  $(".laptop-img").hover(function() {
+    $(".laptop-img").animate(
+      { deg: 360 },
+      {
+        duration: 2100,
+        step: function(now) {
+          $(this).css({ transform: 'rotate(' + now + 'deg)' });
+        }
+      }
+    );
+  });
