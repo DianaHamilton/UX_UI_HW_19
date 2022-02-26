@@ -263,7 +263,12 @@ button:hover {
   text-decoration: none;
 }
 
-
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
    /* Banner Styles */
    .hero-image {
     background-image: url("../images/bannerTop.png");
